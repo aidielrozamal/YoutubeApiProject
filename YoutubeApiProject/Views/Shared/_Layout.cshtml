@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - YoutubeApiProject</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/YoutubeApiProject.styles.css" asp-append-version="true" />
+    <style>
+        /* Custom styles for the header */
+        .navbar {
+            background:  /* Vibrant gradient for the navbar */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem; /* Bigger logo text */
+            color: #fff; /* White text for contrast */
+        }
+
+        .navbar-nav {
+            flex-grow: 1; /* Make the nav take up remaining space */
+            justify-content: center; /* Center the nav items */
+        }
+
+        .nav-item {
+            margin: 0 15px; /* Margin for spacing */
+        }
+
+        .nav-link {
+            color: #fff; /* White text for links */
+            padding: 12px 25px; /* Padding for button look */
+            border-radius: 25px; /* More rounded corners */
+            transition: all 0.3s ease; /* Smooth transition for effects */
+            text-transform: uppercase; /* Uppercase text */
+            font-weight: bold; /* Bold text */
+            background-color: rgba(255, 255, 255, 0.1); /* Slight background */
+        }
+
+            .nav-link:hover {
+                background-color: #ffeb3b; /* Yellow background on hover */
+                color: #ff5722; /* Change text color on hover */
+                transform: scale(1.1); /* Scale up on hover */
+                box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); /* Glow effect */
+            }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.5); /* White border for toggler */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M4 7h22M4 15h22M4 23h22" /%3E%3C/svg%3E'); /* Custom icon color */
+        }
+
+        /* Adjust container padding for better spacing */
+        .container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Handsome</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Youtube" asp-action="Index">Search Music</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - YoutubeApiProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,104 @@
+﻿@model List<YouTubeApiProject.Models.YouTubeVideoModel>
+
+<section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-12 mx-auto">
+                <h1 class="text-white text-center">Discover. Learn. Kick!</h1>
+                <h6 class="text-center text-white">Your platform for sports creativity and passion</h6>
+
+                <form asp-action="Search" method="post" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text bi-search" id="basic-addon1"></span>
+                        <input name="query" type="text" class="form-control" id="keyword" placeholder="Search for sports videos..." aria-label="Search">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Results Section -->
+@if (Model != null && Model.Any())
+{
+    <section class="video-results-section">
+        <div class="container">
+            <h2 class="text-center mt-5">Search Results</h2>
+            <div class="row mt-4">
+                @foreach (var video in Model)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="video-card">
+                            <img src="@video.ThumbnailUrl" alt="@video.Title" class="img-fluid">
+                            <h3>@video.Title</h3>
+                            <p>@video.Description</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+}
+
+<style>
+
+    body {
+        background: linear-gradient(135deg, #00FF00, #FF00FF); /* Neon Green to Neon Pink */
+        color: black; /* Default text color */
+        font-family: 'Arial', sans-serif; /* Font for the entire page */
+    }
+
+    .hero-section {
+        background: linear-gradient(135deg, #4CAF50, #FF9800); /* Green to Orange gradient for sports theme */
+        padding: 60px 0;
+    }
+
+    .custom-form .input-group {
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    .custom-block {
+        border-radius: 10px;
+        overflow: hidden; /* Ensure the rounded corners apply to images */
+    }
+
+    .video-card {
+        transition: transform 0.3s;
+        border-radius: 10px;
+        background: white; /* White background for video cards */
+        padding: 15px; /* Add padding for aesthetics */
+        text-align: center; /* Center text */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+        .video-card img {
+            border-radius: 10px;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+    .custom-btn {
+        background-color: #007bff; /* Primary button color */
+        color: white;
+        border-radius: 5px;
+    }
+
+        .custom-btn:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+    /* Additional styles to improve layout */
+    .text-white {
+        color: white !important; /* Ensure white text color */
+    }
+
+    .shadow-lg {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Larger shadow for cards */
+    }
+
+
+</style>

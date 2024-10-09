@@ -1,0 +1,149 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- sports -->
+<div class="sports">
+    <div class="full-width-container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text_align_center">
+                <div class="titlepage">
+                    <h2 class="clean-title">Our Football Idols</h2>
+                    <div class="simple-divider"></div>
+                    <p class="clean-subtitle">These are the top 3 footballers in the world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Continue with the rest of your content here -->
+<div class="sports">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-3">
+                <div class="sports_main text_align_center">
+                    <figure><img src="image/cr1.png" alt="Game 1" class="game-img" /></figure>
+                    <div class="sports_text">
+                        <h3>Cristiano Ronaldo</h3>
+                        <p>
+                            Cristiano Ronaldo is a Portuguese professional football (soccer) player, widely regarded as one of the greatest players of all time. Born on February 5, 1985, in Funchal, Madeira, he began his career at Sporting Lisbon before moving to Manchester United in 2003, where he gained international fame.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="sports_main text_align_center">
+                    <figure><img src="image/n1.png" alt="Game 2" class="game-img" /></figure>
+                    <div class="sports_text">
+                        <h3>Neymar Jr.</h3>
+                        <p>
+                            Neymar Jr., full name Neymar da Silva Santos Júnior, is a Brazilian professional football player, widely recognized for his exceptional talent and flair on the field. Born on February 5, 1992, in Mogi das Cruzes, São Paulo, he began his career at Santos FC in Brazil, where he gained international attention for his scoring ability and dribbling skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="sports_main text_align_center">
+                    <figure><img src="image/m1.png" alt="Game 3" class="game-img" /></figure>
+                    <div class="sports_text">
+                        <h3>Lionel Messi</h3>
+                        <p>Lionel Messi, full name Lionel Andrés Messi, is an Argentine professional football player, often regarded as one of the greatest footballers of all time. He was born on June 24, 1987, in Rosario, Argentina. Messi began his football career at a young age and joined FC Barcelona's youth academy, La Masia, at 13.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(135deg, rgba(255, 223, 186, 0.8), rgba(186, 255, 223, 0.8)); /* Vibrant red to yellow gradient */
+        font-family: Arial, sans-serif; /* Set a clean, modern font */
+        margin: 0; /* Remove default body margin */
+        min-height: 100vh; /* Ensure body takes full height of the viewport */
+    }
+
+    .full-width-container {
+        max-width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sports {
+        background: linear-gradient(135deg, rgba(255, 223, 186, 0.8), rgba(186, 255, 223, 0.8)); /* Soft gradient for sports section */
+        padding: 50px 0;
+        color: #333;
+        position: relative; /* To position the pseudo-element */
+        overflow: hidden; /* To hide overflow from pseudo-element */
+        border-radius: 10px; /* Add rounded corners to the sports section */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    }
+
+        /* Optional background pattern */
+        .sports::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('path/to/your/pattern.png'); /* Replace with your pattern image */
+            opacity: 0.1; /* Light opacity for a subtle effect */
+            pointer-events: none; /* Prevents interaction */
+        }
+
+    .titlepage h2 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .titlepage p {
+        color: #666;
+        font-size: 1rem;
+        max-width: 600px;
+        margin: 0 auto 30px;
+    }
+
+    .sports_main figure {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .sports_main img.game-img {
+        width: 100%;
+        height: auto;
+        max-height: 250px; /* Increased size for a medium look */
+        object-fit: contain; /* Ensures the whole image fits without cropping */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sports_main:hover img.game-img {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+    }
+
+    .sports_main img.game-img::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        background: linear-gradient(45deg, rgba(255, 223, 186, 0.5), rgba(255, 255, 224, 0.3));
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .sports_main:hover img.game-img::before {
+        opacity: 1;
+    }
+
+    .sports_main img.game-img:hover {
+        filter: brightness(1.1) contrast(1.2);
+    }
+</style>
