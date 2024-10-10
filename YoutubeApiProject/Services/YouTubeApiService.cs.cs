@@ -30,8 +30,11 @@ namespace YouTubeApiProject.Services
             {
                 Title = item.Snippet.Title,
                 Description = item.Snippet.Description,
-                ThumbnailUrl = item.Snippet.Thumbnails.Medium.Url
+                ThumbnailUrl = item.Snippet.Thumbnails.Medium.Url,
+                VideoUrl = "https://www.youtube.com/watch?v=" +
+                item.Id.VideoId // Add this line
             }).ToList();
+
             return videos;
         }
     }

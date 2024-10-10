@@ -4,16 +4,18 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-12 mx-auto">
-                <h1 class="text-white text-center">Discover. Learn. Kick!</h1>
-                <h6 class="text-center text-white">Your platform for sports creativity and passion</h6>
+                <h1 class="text-black text-center">Discover. Learn. Kick!</h1>
+                <h6 class="text-center text-black">Your platform for sports creativity and passion</h6>
 
                 <form asp-action="Search" method="post" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-text bi-search" id="basic-addon1"></span>
-                        <input name="query" type="text" class="form-control" id="keyword" placeholder="Search for sports videos..." aria-label="Search">
-                        <button type="submit" class="btn btn-primary">Search</button>
+                    <div class="input-group input-group-lg shadow-sm">
+                        <span class="input-group-text bi-search" id="basic-addon1" style="background-color: #f8f9fa; border: none;"></span>
+                        <input name="query" type="text" class="form-control border-0" id="keyword" placeholder="Search for sports videos..." aria-label="Search" style="border-radius: 0;" />
+                        <button type="submit" class="btn custom-btn" style="border-radius: 30px;">Search</button>
+
                     </div>
                 </form>
+
             </div>
         </div>
     </div>
@@ -33,72 +35,114 @@
                             <img src="@video.ThumbnailUrl" alt="@video.Title" class="img-fluid">
                             <h3>@video.Title</h3>
                             <p>@video.Description</p>
+                            <br />
+                            <a href="@video.VideoUrl" target="_blank">
+                                <button type="button" style="
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: transform 0.2s, background-color 0.2s; /* Animation for scale and color */
+    cursor: pointer;
+    border-radius: 12px;
+          " onmouseover="this.style.backgroundColor='#45a049'" onmouseout="this.style.backgroundColor='#4CAF50'">
+                                    Watch
+                                </button>
+                            </a>
+
+
+
                         </div>
                     </div>
                 }
             </div>
         </div>
+
     </section>
 }
 
 <style>
 
     body {
-        background: linear-gradient(135deg, #00FF00, #FF00FF); /* Neon Green to Neon Pink */
-        color: black; /* Default text color */
-        font-family: 'Arial', sans-serif; /* Font for the entire page */
+        background: linear-gradient(135deg, rgba(255, 223, 186, 0.8), rgba(186, 255, 223, 0.8)); /* Light gray background for a subtle look */
+        color: #333; /* Dark gray text color for readability */
+        font-family: 'Helvetica', sans-serif; /* Simple and clean font */
     }
 
-    .hero-section {
-        background: linear-gradient(135deg, #4CAF50, #FF9800); /* Green to Orange gradient for sports theme */
-        padding: 60px 0;
-    }
-
-    .custom-form .input-group {
-        border-radius: 30px;
-        overflow: hidden;
-    }
-
-    .custom-block {
-        border-radius: 10px;
-        overflow: hidden; /* Ensure the rounded corners apply to images */
+    .hero-section h1, .video-card h3 {
+        font-family: 'Georgia', serif; /* Classy font for headings */
+        font-weight: normal; /* Keep the font weight normal for elegance */
+        color: black; /* Dark gray for all headings */
+        text-shadow: none; /* Remove text shadow for a minimalist look */
     }
 
     .video-card {
-        transition: transform 0.3s;
         border-radius: 10px;
-        background: white; /* White background for video cards */
-        padding: 15px; /* Add padding for aesthetics */
-        text-align: center; /* Center text */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        background: #fff; /* White background for contrast */
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        border: 1px solid #ccc; /* Light gray border */
+        font-family: 'Georgia', serif; /* Classy font for headings */
     }
 
-        .video-card img {
-            border-radius: 10px;
+.video-card:hover {
+    transform: rotate(-3deg) scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.8); /* Increase shadow intensity */
+}
+
+        .video-card h3 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: #333; /* Dark gray for text */
         }
 
-        .video-card:hover {
-            transform: translateY(-5px);
+
+        .video-card p {
+            color: #555; /* Medium gray for descriptions */
+            font-family: 'Helvetica', sans-serif; /* Simple and clean font */
+            font-size: 0.9rem;
+        }
+
+    button {
+        background: #333; /* Dark gray button */
+        color: white;
+        border-radius: 5px;
+        padding: 10px 24px;
+        font-family: 'Helvetica', sans-serif;
+        transition: background-color 0.3s ease;
+    }
+
+        button:hover {
+            background-color: #555; /* Slightly lighter gray on hover */
         }
 
     .custom-btn {
-        background-color: #007bff; /* Primary button color */
-        color: white;
-        border-radius: 5px;
+        background: linear-gradient(90deg, #007bff, #0056b3); /* Gradient background */
+        color: white; /* White text for contrast */
+        border: none; /* Remove default border */
+        padding: 10px 20px; /* Add padding for better sizing */
+        font-size: 1.1rem; /* Increase font size */
+        transition: background 0.3s ease, transform 0.2s; /* Smooth transition */
     }
 
         .custom-btn:hover {
-            background-color: #0056b3; /* Darker shade on hover */
+            background: linear-gradient(90deg, #0056b3, #007bff); /* Reverse gradient on hover */
+            transform: scale(1.05); /* Slightly enlarge button on hover */
         }
 
-    /* Additional styles to improve layout */
-    .text-white {
-        color: white !important; /* Ensure white text color */
-    }
-
-    .shadow-lg {
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Larger shadow for cards */
-    }
+        .custom-btn:focus {
+            outline: none; /* Remove default focus outline */
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add subtle shadow on focus */
+        }
 
 
 </style>
+
+
+

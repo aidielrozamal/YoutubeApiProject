@@ -8,9 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "YoutubeApiProject/1.0.0": {
         "dependencies": {
-          "Google.Apis.YouTube.v3": "1.68.0.3546",
+          "Google.Apis.YouTube.v3": "1.68.0.3556",
           "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Extensions.Configuration.Json": "8.0.0"
+          "Microsoft.Extensions.Configuration.Json": "8.0.1"
         },
         "runtime": {
           "YoutubeApiProject.dll": {}
@@ -51,15 +51,15 @@
           }
         }
       },
-      "Google.Apis.YouTube.v3/1.68.0.3546": {
+      "Google.Apis.YouTube.v3/1.68.0.3556": {
         "dependencies": {
           "Google.Apis": "1.68.0",
           "Google.Apis.Auth": "1.68.0"
         },
         "runtime": {
           "lib/net6.0/Google.Apis.YouTube.v3.dll": {
-            "assemblyVersion": "1.68.0.3546",
-            "fileVersion": "1.68.0.3546"
+            "assemblyVersion": "1.68.0.3556",
+            "fileVersion": "1.68.0.3556"
           }
         }
       },
@@ -86,7 +86,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Configuration.FileExtensions/8.0.0": {
+      "Microsoft.Extensions.Configuration.FileExtensions/8.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
@@ -97,22 +97,22 @@
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.724.31311"
           }
         }
       },
-      "Microsoft.Extensions.Configuration.Json/8.0.0": {
+      "Microsoft.Extensions.Configuration.Json/8.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Configuration.FileExtensions": "8.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "8.0.1",
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
-          "System.Text.Json": "8.0.0"
+          "System.Text.Json": "8.0.5"
         },
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.Configuration.Json.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.1024.46610"
           }
         }
       },
@@ -214,7 +214,7 @@
           }
         }
       },
-      "System.Text.Json/8.0.0": {
+      "System.Text.Json/8.0.5": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Text.Encodings.Web": "8.0.0"
@@ -222,7 +222,7 @@
         "runtime": {
           "lib/net6.0/System.Text.Json.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.1024.46610"
           }
         }
       }
@@ -255,12 +255,12 @@
       "path": "google.apis.core/1.68.0",
       "hashPath": "google.apis.core.1.68.0.nupkg.sha512"
     },
-    "Google.Apis.YouTube.v3/1.68.0.3546": {
+    "Google.Apis.YouTube.v3/1.68.0.3556": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TJdtdjm9eh6NBlGoB93iYj9v43zz3boLWaJvJUsf3xU2zhDr6f/Rdeqq2eze1qTIBkCtYnEHuh+dgQ3bP4KZ7Q==",
-      "path": "google.apis.youtube.v3/1.68.0.3546",
-      "hashPath": "google.apis.youtube.v3.1.68.0.3546.nupkg.sha512"
+      "sha512": "sha512-i4S4GPfN7oKaw6WvDnrlz7CJwoNhD3KKuNLsv9KOT1zAGBHa/vpc1NqNgqzwOfinbSuIUQ1kXMtNcY7Ytj4LEw==",
+      "path": "google.apis.youtube.v3/1.68.0.3556",
+      "hashPath": "google.apis.youtube.v3.1.68.0.3556.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/8.0.0": {
       "type": "package",
@@ -276,19 +276,19 @@
       "path": "microsoft.extensions.configuration.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Configuration.FileExtensions/8.0.0": {
+    "Microsoft.Extensions.Configuration.FileExtensions/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-McP+Lz/EKwvtCv48z0YImw+L1gi1gy5rHhNaNIY2CrjloV+XY8gydT8DjMR6zWeL13AFK+DioVpppwAuO1Gi1w==",
-      "path": "microsoft.extensions.configuration.fileextensions/8.0.0",
-      "hashPath": "microsoft.extensions.configuration.fileextensions.8.0.0.nupkg.sha512"
+      "sha512": "sha512-EJzSNO9oaAXnTdtdNO6npPRsIIeZCBSNmdQ091VDO7fBiOtJAAeEq6dtrVXIi3ZyjC5XRSAtVvF8SzcneRHqKQ==",
+      "path": "microsoft.extensions.configuration.fileextensions/8.0.1",
+      "hashPath": "microsoft.extensions.configuration.fileextensions.8.0.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Configuration.Json/8.0.0": {
+    "Microsoft.Extensions.Configuration.Json/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-C2wqUoh9OmRL1akaCcKSTmRU8z0kckfImG7zLNI8uyi47Lp+zd5LWAD17waPQEqCz3ioWOCrFUo+JJuoeZLOBw==",
-      "path": "microsoft.extensions.configuration.json/8.0.0",
-      "hashPath": "microsoft.extensions.configuration.json.8.0.0.nupkg.sha512"
+      "sha512": "sha512-L89DLNuimOghjV3tLx0ArFDwVEJD6+uGB3BMCMX01kaLzXkaXHb2021xOMl2QOxUxbdePKUZsUY7n2UUkycjRg==",
+      "path": "microsoft.extensions.configuration.json/8.0.1",
+      "hashPath": "microsoft.extensions.configuration.json.8.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
       "type": "package",
@@ -353,12 +353,12 @@
       "path": "system.text.encodings.web/8.0.0",
       "hashPath": "system.text.encodings.web.8.0.0.nupkg.sha512"
     },
-    "System.Text.Json/8.0.0": {
+    "System.Text.Json/8.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OdrZO2WjkiEG6ajEFRABTRCi/wuXQPxeV6g8xvUJqdxMvvuCCEk86zPla8UiIQJz3durtUEbNyY/3lIhS0yZvQ==",
-      "path": "system.text.json/8.0.0",
-      "hashPath": "system.text.json.8.0.0.nupkg.sha512"
+      "sha512": "sha512-0f1B50Ss7rqxXiaBJyzUu9bWFOO2/zSlifZ/UNMdiIpDYe4cY4LQQicP4nirK1OS31I43rn062UIJ1Q9bpmHpg==",
+      "path": "system.text.json/8.0.5",
+      "hashPath": "system.text.json.8.0.5.nupkg.sha512"
     }
   }
 }

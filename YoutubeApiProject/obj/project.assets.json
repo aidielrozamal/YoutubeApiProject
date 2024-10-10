@@ -52,7 +52,7 @@
           }
         }
       },
-      "Google.Apis.YouTube.v3/1.68.0.3546": {
+      "Google.Apis.YouTube.v3/1.68.0.3556": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.68.0",
@@ -108,7 +108,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Configuration.FileExtensions/8.0.0": {
+      "Microsoft.Extensions.Configuration.FileExtensions/8.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
@@ -131,14 +131,14 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Json/8.0.0": {
+      "Microsoft.Extensions.Configuration.Json/8.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Configuration.FileExtensions": "8.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "8.0.1",
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
-          "System.Text.Json": "8.0.0"
+          "System.Text.Json": "8.0.5"
         },
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Configuration.Json.dll": {
@@ -324,7 +324,7 @@
           }
         }
       },
-      "System.Text.Json/8.0.0": {
+      "System.Text.Json/8.0.5": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
@@ -413,16 +413,16 @@
         "lib/netstandard2.0/Google.Apis.Core.xml"
       ]
     },
-    "Google.Apis.YouTube.v3/1.68.0.3546": {
-      "sha512": "TJdtdjm9eh6NBlGoB93iYj9v43zz3boLWaJvJUsf3xU2zhDr6f/Rdeqq2eze1qTIBkCtYnEHuh+dgQ3bP4KZ7Q==",
+    "Google.Apis.YouTube.v3/1.68.0.3556": {
+      "sha512": "i4S4GPfN7oKaw6WvDnrlz7CJwoNhD3KKuNLsv9KOT1zAGBHa/vpc1NqNgqzwOfinbSuIUQ1kXMtNcY7Ytj4LEw==",
       "type": "package",
-      "path": "google.apis.youtube.v3/1.68.0.3546",
+      "path": "google.apis.youtube.v3/1.68.0.3556",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.youtube.v3.1.68.0.3546.nupkg.sha512",
+        "google.apis.youtube.v3.1.68.0.3556.nupkg.sha512",
         "google.apis.youtube.v3.nuspec",
         "lib/net462/Google.Apis.YouTube.v3.dll",
         "lib/net462/Google.Apis.YouTube.v3.pdb",
@@ -495,10 +495,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration.FileExtensions/8.0.0": {
-      "sha512": "McP+Lz/EKwvtCv48z0YImw+L1gi1gy5rHhNaNIY2CrjloV+XY8gydT8DjMR6zWeL13AFK+DioVpppwAuO1Gi1w==",
+    "Microsoft.Extensions.Configuration.FileExtensions/8.0.1": {
+      "sha512": "EJzSNO9oaAXnTdtdNO6npPRsIIeZCBSNmdQ091VDO7fBiOtJAAeEq6dtrVXIi3ZyjC5XRSAtVvF8SzcneRHqKQ==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.fileextensions/8.0.0",
+      "path": "microsoft.extensions.configuration.fileextensions/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -520,15 +520,15 @@
         "lib/net8.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
-        "microsoft.extensions.configuration.fileextensions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.8.0.1.nupkg.sha512",
         "microsoft.extensions.configuration.fileextensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration.Json/8.0.0": {
-      "sha512": "C2wqUoh9OmRL1akaCcKSTmRU8z0kckfImG7zLNI8uyi47Lp+zd5LWAD17waPQEqCz3ioWOCrFUo+JJuoeZLOBw==",
+    "Microsoft.Extensions.Configuration.Json/8.0.1": {
+      "sha512": "L89DLNuimOghjV3tLx0ArFDwVEJD6+uGB3BMCMX01kaLzXkaXHb2021xOMl2QOxUxbdePKUZsUY7n2UUkycjRg==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.json/8.0.0",
+      "path": "microsoft.extensions.configuration.json/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -552,7 +552,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.xml",
-        "microsoft.extensions.configuration.json.8.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.json.8.0.1.nupkg.sha512",
         "microsoft.extensions.configuration.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -820,10 +820,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Text.Json/8.0.0": {
-      "sha512": "OdrZO2WjkiEG6ajEFRABTRCi/wuXQPxeV6g8xvUJqdxMvvuCCEk86zPla8UiIQJz3durtUEbNyY/3lIhS0yZvQ==",
+    "System.Text.Json/8.0.5": {
+      "sha512": "0f1B50Ss7rqxXiaBJyzUu9bWFOO2/zSlifZ/UNMdiIpDYe4cY4LQQicP4nirK1OS31I43rn062UIJ1Q9bpmHpg==",
       "type": "package",
-      "path": "system.text.json/8.0.0",
+      "path": "system.text.json/8.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -888,7 +888,7 @@
         "lib/net8.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.8.0.0.nupkg.sha512",
+        "system.text.json.8.0.5.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -896,29 +896,29 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Google.Apis.YouTube.v3 >= 1.68.0.3546",
+      "Google.Apis.YouTube.v3 >= 1.68.0.3556",
       "Microsoft.Extensions.Configuration >= 8.0.0",
-      "Microsoft.Extensions.Configuration.Json >= 8.0.0"
+      "Microsoft.Extensions.Configuration.Json >= 8.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\aidie\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\YoutubeApiProject\\YoutubeApiProject\\YoutubeApiProject.csproj",
+      "projectUniqueName": "C:\\Users\\aidie\\source\\repos\\YoutubeApiProject\\YoutubeApiProject\\YoutubeApiProject.csproj",
       "projectName": "YoutubeApiProject",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\YoutubeApiProject\\YoutubeApiProject\\YoutubeApiProject.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\YoutubeApiProject\\YoutubeApiProject\\obj\\",
+      "projectPath": "C:\\Users\\aidie\\source\\repos\\YoutubeApiProject\\YoutubeApiProject\\YoutubeApiProject.csproj",
+      "packagesPath": "C:\\Users\\aidie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aidie\\source\\repos\\YoutubeApiProject\\YoutubeApiProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aidie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -953,7 +953,7 @@
         "dependencies": {
           "Google.Apis.YouTube.v3": {
             "target": "Package",
-            "version": "[1.68.0.3546, )"
+            "version": "[1.68.0.3556, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -961,7 +961,7 @@
           },
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[8.0.1, )"
           }
         },
         "imports": [
